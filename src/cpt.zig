@@ -90,9 +90,6 @@ const CpFile = struct {
 };
 const Cp = struct {
    const Self=@This();
-   const CpResult = error {
-       NotImplementedCpSrcDir,
-   };
    alloc   : std.mem.Allocator,
    dest    :  CpFile,
    src     : CpFile,
